@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>hello world</h1>
+    </body>
+    <script>
+        const url = "https://shiny-barnacle-r4rvr769qgvg3xrx7-3333.app.github.dev/"
+
+        fetch(url,{
+            method: "POST",
+            body: JSON.stringify({
+                name: "Harish",
+                age: 22, rollNo: 354354
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((response) => {
+            console.log(response)
+        })
+
+    </script>
+</html>
